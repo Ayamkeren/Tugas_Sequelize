@@ -11,11 +11,15 @@ const Transaksi = db.define(
       autoIncrement: true,
       allowNull: false,
     },
-    tanggalPembelian: {
-      type: DataTypes.DATE,
+    jenis_ikan: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
-    nominal: {
+    jumlah_ikan: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    harga_per_ikan: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
